@@ -1,0 +1,22 @@
+{
+  "Перевод": "Translate",
+  "Язык": "Русский",
+  "Страница не найдена": "Page not found",
+  "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
+  "Обновить страницу": "Обновить страницу",
+  "Переключить": "Переключить",
+  "Короткий язык": "Ru",
+  "Войти": "Войти",
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
+    " Asperiores culpa deserunt fuga labore laudantium nihil, quas totam voluptatibus": {
+      "Aut, nulla!": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores culpa deserunt fuga labore laudantium nihil, quas totam voluptatibus.Aut, nulla!"
+    }
+  },
+  "decrement": "decrement",
+  "increment": "increment",
+  "Введите пароль": "Enter password",
+  "Введите username": "Enter username",
+  "Форма авторизации": "Форма авторизации",
+  "Вы ввели неверный логин или пароль": "You entered an incorrect username or password",
+  "Выйти": "Выйти"
+}
