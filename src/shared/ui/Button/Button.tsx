@@ -3,24 +3,17 @@ import { ButtonHTMLAttributes, memo, ReactNode } from 'react';
 import cls from './Button.module.scss';
 
 export enum ButtonTheme {
-    // eslint-disable-next-line no-unused-vars
     CLEAR = 'clear',
-    // eslint-disable-next-line no-unused-vars
     CLEAR_INVERTED = 'clearInverted',
-    // eslint-disable-next-line no-unused-vars
     OUTLINE = 'outline',
-    // eslint-disable-next-line no-unused-vars
+    OUTLINE_RED = 'outline_red',
     BACKGROUND = 'background',
-    // eslint-disable-next-line no-unused-vars
     BACKGROUND_INVERTED = 'backgroundInverted'
 }
 
 export enum ButtonSize {
-    // eslint-disable-next-line no-unused-vars
     M = 'size_m',
-    // eslint-disable-next-line no-unused-vars
     L = 'size_l',
-    // eslint-disable-next-line no-unused-vars
     XL = 'size_xl',
 }
 
