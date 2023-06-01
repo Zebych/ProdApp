@@ -9,7 +9,7 @@ export enum ValidateProfileError {
     SERVER_ERROR = 'SERVER_ERROR',
 }
 
-export interface Profile {
+export interface ProfileCardData {
     first?: string;
     lastname?: string;
     age?: number;
@@ -21,8 +21,8 @@ export interface Profile {
 }
 
 export interface ProfileSchema {
-    data?: Profile;
-    form?: Profile;
+    data?: ProfileCardData;
+    form?: ProfileCardData;
     isLoading: boolean;
     error?: string;
     readonly: boolean;
