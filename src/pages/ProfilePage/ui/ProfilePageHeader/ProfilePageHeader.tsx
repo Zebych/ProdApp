@@ -1,6 +1,6 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { Text } from 'shared/ui/Text/Text';
+import { TextComponent } from 'shared/ui/Text/TextComponent';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { useSelector } from 'react-redux';
 import { getProfileReadonly, profileActions, updateProfileData } from 'entities/Profile';
@@ -32,7 +32,7 @@ export const ProfilePageHeader = ({ className }: ProfilePageHeaderProps) => {
 
     return (
         <div className={classNames(cls.ProfilePageHeader, {}, [className])}>
-            <Text title={t('Профиль')} />
+            <TextComponent title={t('Профиль')} />
             {readonly
                 ? (
                     <Button

@@ -21,7 +21,7 @@ interface TextProps {
     align?: TextAlign
 }
 
-export const Text = memo((props: TextProps) => {
+export const TextComponent = memo((props: TextProps) => {
     const {
         className,
         title,

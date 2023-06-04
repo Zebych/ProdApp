@@ -4,7 +4,7 @@ import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { Input } from 'shared/ui/Input/Input';
 import { useSelector } from 'react-redux';
 import { memo, useCallback } from 'react';
-import { Text, TextTheme } from 'shared/ui/Text/Text';
+import { TextComponent, TextTheme } from 'shared/ui/Text/TextComponent';
 import {
     DynamicModuleLoader,
     ReducersList,
@@ -58,9 +58,9 @@ const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
             reducers={initialReducers}
         >
             <div className={classNames(cls.LoginForm, {}, [className])}>
-                <Text title={t('Форма авторизации')} />
+                <TextComponent title={t('Форма авторизации')} />
                 {error && (
-                    <Text
+                    <TextComponent
                         text={t('Вы ввели неверный логин или пароль') || ''}
                         theme={TextTheme.ERROR}
                     />

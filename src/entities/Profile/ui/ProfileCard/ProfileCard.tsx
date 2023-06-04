@@ -1,6 +1,6 @@
 import { classNames, Mods } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { Text, TextAlign, TextTheme } from 'shared/ui/Text/Text';
+import { TextComponent, TextAlign, TextTheme } from 'shared/ui/Text/TextComponent';
 import { Input } from 'shared/ui/Input/Input';
 import { Loader } from 'shared/ui/Loader/Loader';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
@@ -57,7 +57,7 @@ export const ProfileCard = (props: ProfileCardProps) => {
     if (error) {
         return (
             <div className={classNames(cls.ProfileCard, {}, [className, cls.error])}>
-                <Text
+                <TextComponent
                     theme={TextTheme.ERROR}
                     title={t('Произошла ошибка при загрузке профиля')}
                     text={t('Попробуйте обновить страницу')}
