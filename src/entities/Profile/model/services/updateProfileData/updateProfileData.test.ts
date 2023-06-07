@@ -12,6 +12,7 @@ const data = {
     first: 'Розарио',
     city: 'Москва',
     currency: Currency.RUB,
+    id: '1',
 };
 
 describe('updateProfileData.test', () => {
