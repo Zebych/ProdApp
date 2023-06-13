@@ -27,6 +27,10 @@
         margin: 16px 0;
     }
 
+    .viewsIcon {
+        width: 25px;
+    }
+
     .footer {
         display: flex;
         align-items: center;
@@ -70,6 +74,10 @@
         width: 200px;
         height: 200px;
         object-fit: cover;
+    }
+
+    .viewsIcon {
+        width: 25px;
     }
 
     .infoWrapper {

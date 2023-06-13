@@ -37,7 +37,7 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
     const views = (
         <>
             <TextComponent text={String(article.views)} className={cls.views} />
-            <Icon Svg={EyeIcon} />
+            <Icon Svg={EyeIcon} className={cls.viewsIcon} />
         </>
     );
     if (view === ArticleView.BIG) {
