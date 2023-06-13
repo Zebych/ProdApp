@@ -10,4 +10,7 @@ export interface ArticlePageSchema extends EntityState<Article> {
     page: number;
     limit?: number;
     hasMore: boolean;
+
+    // Проверка на инициализацию - для повторных запросов при возврате на страницу
+    _inited: boolean;
 }
