@@ -24,7 +24,7 @@ import { Country } from 'entities/Country/model/types/country';
 import { TextComponent, TextTheme } from 'shared/ui/Text/TextComponent';
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { useParams } from 'react-router-dom';
-import { Page } from 'shared/ui/Page/Page';
+import { Page } from 'widgests/Page/Page';
 import { ProfilePageHeader } from './ProfilePageHeader/ProfilePageHeader';
 
 const reducers: ReducersList = {
