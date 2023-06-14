@@ -1,7 +1,8 @@
-import { memo } from 'react';
+import { HTMLAttributeAnchorTarget, memo } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import { ArticleListItemSkeleton } from 'entities/Article/ui/ArticleListItem/ArticleListItemSkeleton';
+import { TextComponent, TextSize } from 'shared/ui/Text/TextComponent';
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
 import cls from './ArticleList.module.scss';
 import { Article, ArticleView } from '../../model/types/article.types';
@@ -11,6 +12,7 @@ interface ArticleListProps {
     articles: Article[];
     isLoading?: boolean;
     view?: ArticleView;
+    target?: HTMLAttributeAnchorTarget;
 }
 
 const getSkeletons = (view:ArticleView) => new Array(view === ArticleView.SMALL ? 9 : 3)
@@ -25,6 +27,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
         articles,
         isLoading,
         view = ArticleView.SMALL,
+        target,
     } = props;
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { t } = useTranslation();
@@ -35,8 +38,17 @@ export const ArticleList = memo((props: ArticleListProps) => {
             article={article}
             view={view}
             className={cls.card}
+            target={target}
         />
     );
+
+    if (!isLoading && !articles.length) {
+        return (
+            <div className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
+                <TextComponent size={TextSize.L} title={t('Статьи не найдены')} />
+            </div>
+        );
+    }
 
     return (
         <div className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
