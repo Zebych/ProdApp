@@ -1,11 +1,11 @@
+import { Country } from 'entities/Country';
+import { Currency } from 'entities/Currency';
 import {
     profileActions,
     profileReducer,
     ProfileSchema,
     updateProfileData, ValidateProfileError,
-} from 'entities/Profile';
-import { Country } from 'entities/Country';
-import { Currency } from 'entities/Currency';
+} from '../../index';
 
 const data = {
     id: '1',
