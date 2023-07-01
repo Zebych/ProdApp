@@ -82,8 +82,6 @@ describe('features/EditableProfileCard', () => {
 
         await userEvent.type(screen.getByTestId('ProfileCard.firstname'), 'user');
 
-        await userEvent.clear(screen.getByTestId('ProfileCard.firstname'));
-
         await userEvent.click(screen.getByTestId('EditableProfileCardHeader.SaveButton'));
 
         expect(mockPutReq).toHaveBeenCalled();
