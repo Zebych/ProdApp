@@ -1400,14 +1400,21 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN",
+      "roles": ["ADMIN"],
       "avatar": "https://static.sobaka.ru/images/image/00/80/54/85/_normal.jpg?v=1485945088"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER",
+      "roles": ["USER"],
+      "avatar": "https://sun9-48.userapi.com/s/v1/if1/IFmn4cJacXFiuJpnB8Rmf6O8dKRHgTNSKpE2akoObhPI7tQflpK_diKcZkLvVapv0mEZHrAb.jpg?size=200x200&quality=96&crop=48,11,325,325&ava=1"
+    },
+    {
+      "id": "3",
+      "username": "manager",
+      "password": "123",
+      "roles": ["MANAGER"],
       "avatar": "https://sun9-48.userapi.com/s/v1/if1/IFmn4cJacXFiuJpnB8Rmf6O8dKRHgTNSKpE2akoObhPI7tQflpK_diKcZkLvVapv0mEZHrAb.jpg?size=200x200&quality=96&crop=48,11,325,325&ava=1"
     }
   ],

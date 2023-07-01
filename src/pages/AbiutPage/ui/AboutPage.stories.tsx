@@ -5,7 +5,7 @@ import { Theme } from 'app/providers/ThemeProviders';
 import AboutPage from './AboutPage';
 
 export default {
-    title: 'pages/AboutPage',
+    title: 'pages/AdminPanelPage',
     component: AboutPage,
     argTypes: {
         backgroundColor: { control: 'color' },
