@@ -97,7 +97,6 @@ export const ArticlesPageFilters = memo((props: ArticlesPageFiltersProps) => {
                     placeholder={t('Поиск')}
                 />
             </Card>
-
             <ArticleTypeTabs
                 value={type}
                 onChangeType={onChangeType}
