@@ -24,5 +24,3 @@ files.forEach((sourceFile) => {
 });
 
 project.save();
-
-// ts-node .\scripts\updateImports.ts -запуск скрипта
