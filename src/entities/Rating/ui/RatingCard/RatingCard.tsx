@@ -1,8 +1,6 @@
 import { memo, useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BrowserView, MobileView } from 'react-device-detect';
-import { classNames } from '@/shared/lib/classNames/classNames';
-import cls from './RatingCard.module.scss';
 import { HStack, VStack } from '@/shared/ui/Stack';
 import { Card } from '@/shared/ui/Card/Card';
 import { TextComponent } from '@/shared/ui/Text/TextComponent';
@@ -14,11 +12,12 @@ import { Drawer } from '@/shared/ui/Drawer/Drawer';
 
 interface RatingCardProps {
     className?: string;
-    title?: string;
-    feedbackTitle?: string;
+    title?: string | null;
+    feedbackTitle?: string | null;
     hasFeedback?: boolean;
     onCancel?: (starsCount: number) => void;
     onAccept?: (starsCount: number, feedback?: string) => void;
+    rate?: number;
 }
 
 export const RatingCard = memo((props: RatingCardProps) => {
@@ -29,10 +28,11 @@ export const RatingCard = memo((props: RatingCardProps) => {
         hasFeedback,
         onCancel,
         onAccept,
+        rate = 0,
     } = props;
     const { t } = useTranslation();
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [starsCount, setStarsCount] = useState(0);
+    const [starsCount, setStarsCount] = useState(rate);
     const [feedback, setFeedback] = useState('');
 
     const onSelectStars = useCallback((selectedStarsCount: number) => {
@@ -62,10 +62,10 @@ export const RatingCard = memo((props: RatingCardProps) => {
     );
 
     return (
-        <Card className={classNames(cls.RatingCard, {}, [className])}>
-            <VStack align="center" gap="8">
-                <TextComponent title={title} />
-                <StarRating size={40} onSelect={onSelectStars} />
+        <Card className={className} max>
+            <VStack align="center" gap="8" max>
+                <TextComponent title={starsCount ? t('Спасибо за оценку') : title} />
+                <StarRating selectedStars={starsCount} size={40} onSelect={onSelectStars} />
                 <BrowserView>
                     <Modal isOpen={isModalOpen} lazy>
                         <VStack max gap="32">
