@@ -10,7 +10,10 @@ import {
     ReducersList,
 } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { HStack } from '@/shared/ui/Stack';
-import { getAddCommentFormText } from '../../model/selectors/addCommentFormSelectors';
+import {
+    getAddCommentFormError,
+    getAddCommentFormText,
+} from '../../model/selectors/addCommentFormSelectors';
 import cls from './AddCommentForm.module.scss';
 import {
     addCommentFormActions,
@@ -19,7 +22,7 @@ import {
 
 export interface AddCommentFormProps {
     className?: string;
-    onSendComment: (text:string)=>void;
+    onSendComment: (text: string) => void;
 }
 
 const reducers: ReducersList = {
@@ -30,10 +33,10 @@ const AddCommentForm = (props: AddCommentFormProps) => {
     const { className, onSendComment } = props;
     const { t } = useTranslation();
     const text = useSelector(getAddCommentFormText);
-    // const error = useSelector(getAddCommentFormError);
+    const error = useSelector(getAddCommentFormError);
     const dispatch = useAppDispatch();
 
-    const onCommentTextChange = useCallback((value:string) => {
+    const onCommentTextChange = useCallback((value: string) => {
         dispatch(addCommentFormActions.setText(value));
     }, [dispatch]);
 
@@ -42,9 +45,19 @@ const AddCommentForm = (props: AddCommentFormProps) => {
         onCommentTextChange('');
     }, [onCommentTextChange, onSendComment, text]);
 
+    if (error) {
+        return (
+            <div>{error}</div>
+        );
+    }
+
     return (
         <DynamicModuleLoader reducers={reducers}>
-            <HStack justify="between" max className={classNames(cls.AddCommentForm, {}, [className])}>
+            <HStack
+                justify="between"
+                max
+                className={classNames(cls.AddCommentForm, {}, [className])}
+            >
                 <Input
                     placeholder={t('Введите текст комментария')}
                     value={text}

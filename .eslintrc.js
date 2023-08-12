@@ -71,7 +71,7 @@ module.exports = {
         'no-unused-vars': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
-        'zebych-plugin/path-checker': 'error',
+        'zebych-plugin/path-checker': ['error', { alias: '@' }],
         '@typescript-eslint/no-unused-vars': [
             'error',
             { argsIgnorePattern: '^_' },
