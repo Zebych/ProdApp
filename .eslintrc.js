@@ -72,6 +72,13 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'zebych-plugin/path-checker': ['error', { alias: '@' }],
+        'zebych-plugin/layer-imports': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+            },
+        ],
         'zebych-plugin/public-api-imports': [
             'error',
             {
