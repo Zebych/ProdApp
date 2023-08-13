@@ -4,10 +4,10 @@ import { Avatar } from '@/shared/ui/Avatar/Avatar';
 import { TextComponent } from '@/shared/ui/Text/TextComponent';
 import { Skeleton } from '@/shared/ui/Skeleton/Skeleton';
 import { AppLink } from '@/shared/ui/AppLink/AppLink';
-import { RoutePath } from '@/shared/config/routeConfig/routeConfig';
 import { VStack } from '@/shared/ui/Stack';
 import cls from './CommentCard.module.scss';
 import { IComment } from '../../model/types/comment';
+import { RoutePath } from '@/shared/const/router';
 
 interface CommentCardProps {
     className?: string;
