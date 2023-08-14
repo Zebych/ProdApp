@@ -23,6 +23,7 @@ module.exports = {
         'i18next',
         'react-hooks',
         'zebych-plugin',
+        'unused-imports',
     ],
     rules: {
         'react/jsx-indent': [2, 4],
@@ -30,7 +31,7 @@ module.exports = {
         indent: [2, 4],
         'react/jsx-filename-extension': [
             2,
-            { extensions: ['.js', '.jsx', '.tsx'] },
+            {extensions: ['.js', '.jsx', '.tsx']},
         ],
         'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off',
@@ -61,7 +62,7 @@ module.exports = {
                 ],
             },
         ],
-        'max-len': ['error', { ignoreComments: true, code: 125 }],
+        'max-len': ['error', {ignoreComments: true, code: 125}],
         'jsx-a11y/no-static-element-interactions': 'off',
         'jsx-a11y/click-events-have-key-events': 'off',
         'react-hooks/rules-of-hooks': 'error',
@@ -71,7 +72,7 @@ module.exports = {
         'no-unused-vars': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
-        'zebych-plugin/path-checker': ['error', { alias: '@' }],
+        'zebych-plugin/path-checker': ['error', {alias: '@'}],
         'zebych-plugin/layer-imports': [
             'error',
             {
@@ -88,8 +89,9 @@ module.exports = {
         ],
         '@typescript-eslint/no-unused-vars': [
             'error',
-            { argsIgnorePattern: '^_' },
+            {argsIgnorePattern: '^_'},
         ],
+        "unused-imports/no-unused-imports": "error",
     },
     globals: {
         __IS_DEV__: true,
