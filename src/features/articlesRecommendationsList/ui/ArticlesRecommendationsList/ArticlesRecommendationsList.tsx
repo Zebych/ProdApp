@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { memo } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { TextComponent, TextSize } from '@/shared/ui/Text/TextComponent';
+import { TextComponent, TextSize } from '@/shared/ui/Text';
 import { ArticleList } from '@/entities/Article';
 import { VStack } from '@/shared/ui/Stack';
 import { useArticlesRecommendationsList } from '../../api/articleRecommendationsApi';
