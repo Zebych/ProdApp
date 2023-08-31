@@ -27,10 +27,6 @@ export const Select = <T extends string>(props: SelectProps<T>) => {
     } = props;
 
     const onChangeHandler = (e: ChangeEvent<HTMLSelectElement>) => {
-        /*  if (onChange) {
-            onChange(e.target.value);
-        } */
-        // Тоже самое что и проверка через if
         onChange?.(e.target.value as T);
     };
 
