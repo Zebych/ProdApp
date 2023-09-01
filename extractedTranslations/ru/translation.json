@@ -26,6 +26,8 @@
     }
   },
   "ProdApp": "ProdApp",
+  "add5": "add5",
+  "addFive": "addFive",
   "decrement": "decrement",
   "increment": "increment",
   "throw error": "throw error",
