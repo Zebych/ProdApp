@@ -19,6 +19,7 @@ export const StarRating = memo((props: StarRatingProps) => {
         onSelect,
         size = 30,
         selectedStars = 0,
+
     } = props;
 
     const [currentStarsCount, setCurrentStarsCount] = useState(selectedStars);
