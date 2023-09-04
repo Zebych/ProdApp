@@ -1450,6 +1450,13 @@
       "password": "123",
       "roles": ["MANAGER"],
       "avatar": "https://sun9-48.userapi.com/s/v1/if1/IFmn4cJacXFiuJpnB8Rmf6O8dKRHgTNSKpE2akoObhPI7tQflpK_diKcZkLvVapv0mEZHrAb.jpg?size=200x200&quality=96&crop=48,11,325,325&ava=1"
+    },
+    {
+      "id": "4",
+      "username": "testuser",
+      "password": "123",
+      "roles": ["ADMIN"],
+      "avatar": "https://static.sobaka.ru/images/image/00/80/54/85/_normal.jpg?v=1485945088"
     }
   ],
   "profile": [
