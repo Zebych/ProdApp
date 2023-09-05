@@ -8,4 +8,9 @@ describe('Пользователь заходит на страницу со с�
         cy.visit('ArticleList').should('exist');
         cy.visit('ArticleListItem').should('have.length.greaterThan', 3);
     });
+    it('На стабах (фикстурах)', () => {
+        cy.intercept('GET', '**/articles?*', { fixture: 'articles.json' });
+        cy.visit('ArticleList').should('exist');
+        cy.visit('ArticleListItem').should('have.length.greaterThan', 3);
+    });
 });
