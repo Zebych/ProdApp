@@ -114,7 +114,7 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
                         />
                     )}
                 </HStack>
-                <VStack gap="4">
+                <VStack gap="4" max data-testid={'ArticleDetails.Info'}>
                     <TextComponent
                         className={cls.title}
                         title={article?.title}
