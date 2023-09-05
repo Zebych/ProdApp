@@ -1,24 +1,22 @@
-import {memo, useCallback} from 'react';
-import {useSearchParams} from 'react-router-dom';
-import {classNames} from '@/shared/lib/classNames/classNames';
+import { memo, useCallback } from 'react';
+import { useSearchParams } from 'react-router-dom';
+import { classNames } from '@/shared/lib/classNames/classNames';
 import {
     DynamicModuleLoader,
     ReducersList,
 } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
-import {useAppDispatch} from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
-import {Page} from '@/widgets/Page';
-import {useInitialEffect} from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
-import {ArticleInfiniteList} from '../ArticleInfiniteList/ArticleInfiniteList';
-import {initArticlesPage} from '../../model/services/initArticlesPage/initArticlesPage';
-import {ArticlesPageFilters} from '../ArticlesPageFilters/ArticlesPageFilters';
-import {
-    fetchNextArticlesPage
-} from '../../model/services/fetchNextArticlesPage/fetchNextArticlesPage';
-import {articlePageReducer} from '../../model/slices/articlePageSlace';
+import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
+import { Page } from '@/widgets/Page';
+import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
+import { ArticleInfiniteList } from '../ArticleInfiniteList/ArticleInfiniteList';
+import { initArticlesPage } from '../../model/services/initArticlesPage/initArticlesPage';
+import { ArticlesPageFilters } from '../ArticlesPageFilters/ArticlesPageFilters';
+import { fetchNextArticlesPage } from '../../model/services/fetchNextArticlesPage/fetchNextArticlesPage';
+import { articlePageReducer } from '../../model/slices/articlePageSlace';
 import cls from './ArticlesPage.module.scss';
 
 interface ArticlesPageProps {
-    className?: string
+    className?: string;
 }
 
 const reducers: ReducersList = {
@@ -26,7 +24,7 @@ const reducers: ReducersList = {
 };
 
 const ArticlesPage = (props: ArticlesPageProps) => {
-    const {className} = props;
+    const { className } = props;
     const dispatch = useAppDispatch();
     const [searchParams] = useSearchParams();
 
@@ -41,12 +39,12 @@ const ArticlesPage = (props: ArticlesPageProps) => {
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount={false}>
             <Page
-                data-testid={'ArticlesPage'}
+                data-testid="ArticlesPage"
                 onScrollEnd={onLoadNextPart}
                 className={classNames(cls.ArticlesPage, {}, [className])}
             >
-                <ArticlesPageFilters/>
-                <ArticleInfiniteList className={cls.list}/>
+                <ArticlesPageFilters />
+                <ArticleInfiniteList className={cls.list} />
             </Page>
         </DynamicModuleLoader>
     );

@@ -6,22 +6,21 @@ export const fetchProfileData = createAsyncThunk<
     ProfileCardData,
     string,
     ThunkConfig<string>
-    >(
-        'profile/fetchProfileData',
-        async (profileId, thunkApi) => {
-            const { extra, rejectWithValue } = thunkApi;
+>('profile/fetchProfileData', async (profileId, thunkApi) => {
+    const { extra, rejectWithValue } = thunkApi;
 
-            try {
-                const response = await extra.api.get<ProfileCardData>(`/profile/${profileId}`);
+    try {
+        const response = await extra.api.get<ProfileCardData>(
+            `/profile/${profileId}`,
+        );
 
-                if (!response.data) {
-                    throw new Error();
-                }
+        if (!response.data) {
+            throw new Error();
+        }
 
-                return response.data;
-            } catch (e) {
-                console.log(e);
-                return rejectWithValue('error');
-            }
-        },
-    );
+        return response.data;
+    } catch (e) {
+        console.log(e);
+        return rejectWithValue('error');
+    }
+});

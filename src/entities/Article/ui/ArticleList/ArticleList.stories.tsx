@@ -13,7 +13,9 @@ export default {
     },
 } as ComponentMeta<typeof ArticleList>;
 
-const Template: ComponentStory<typeof ArticleList> = (args) => <ArticleList {...args} />;
+const Template: ComponentStory<typeof ArticleList> = (args) => (
+    <ArticleList {...args} />
+);
 
 const article = {
     id: '1',
@@ -27,12 +29,7 @@ const article = {
         username: 'Rozario',
         avatar: 'https://static.sobaka.ru/images/image/00/80/54/85/_normal.jpg?v=1485945088',
     },
-    type: [
-        'IT',
-        'SCIENCE',
-        'POLITICS',
-        'ECONOMICS',
-    ],
+    type: ['IT', 'SCIENCE', 'POLITICS', 'ECONOMICS'],
     blocks: [
         {
             id: '1',
@@ -67,7 +64,7 @@ const article = {
         {
             id: '3',
             type: 'CODE',
-            code: 'const path = require(\'path\');\n\nconst server = jsonServer.create();\n\nconst router = jsonServer.router(path.resolve(__dirname, \'db.json\'));\n\nserver.use(jsonServer.defaults({}));\nserver.use(jsonServer.bodyParser);',
+            code: "const path = require('path');\n\nconst server = jsonServer.create();\n\nconst router = jsonServer.router(path.resolve(__dirname, 'db.json'));\n\nserver.use(jsonServer.defaults({}));\nserver.use(jsonServer.bodyParser);",
         },
         {
             id: '7',
@@ -111,25 +108,19 @@ LoadingSmall.args = {
 
 export const ListSmall = Template.bind({});
 ListSmall.args = {
-    articles:
-        new Array(9)
-            .fill(0)
-            .map((item, idx) => ({
-                ...article,
-                id: String(idx),
-            })),
+    articles: new Array(9).fill(0).map((item, idx) => ({
+        ...article,
+        id: String(idx),
+    })),
     isLoading: false,
     view: ArticleView.SMALL,
 };
 export const ListBig = Template.bind({});
 ListBig.args = {
-    articles:
-        new Array(9)
-            .fill(0)
-            .map((item, idx) => ({
-                ...article,
-                id: String(idx),
-            })),
+    articles: new Array(9).fill(0).map((item, idx) => ({
+        ...article,
+        id: String(idx),
+    })),
     isLoading: false,
     view: ArticleView.BIG,
 };

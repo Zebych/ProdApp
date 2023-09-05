@@ -27,11 +27,19 @@ export function RequireAuth({ children, roles }: RequireAuthProps) {
     }, [roles, userRoles]);
 
     if (!auth) {
-        return <Navigate to={getRouteMain()} state={{ form: location }} replace />;
+        return (
+            <Navigate to={getRouteMain()} state={{ form: location }} replace />
+        );
     }
 
     if (!hasRequiredRoles) {
-        return <Navigate to={getRouteForbidden()} state={{ form: location }} replace />;
+        return (
+            <Navigate
+                to={getRouteForbidden()}
+                state={{ form: location }}
+                replace
+            />
+        );
     }
 
     return children;

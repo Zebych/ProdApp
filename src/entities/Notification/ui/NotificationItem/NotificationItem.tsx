@@ -19,7 +19,6 @@ export const NotificationItem = memo((props: NotificationItemProps) => {
             className={classNames(cls.NotificationItem, {}, [className])}
         >
             <TextComponent title={item.title} text={item.description} />
-
         </Card>
     );
 

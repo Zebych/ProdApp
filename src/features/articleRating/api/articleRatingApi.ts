@@ -6,7 +6,7 @@ interface GetArticleRatingArg {
     articleId: string;
 }
 interface RateArticleArg {
-    userId:string;
+    userId: string;
     articleId: string;
     rate: number;
     feedback?: string;
@@ -14,7 +14,7 @@ interface RateArticleArg {
 
 const articleRatingApi = rtkApi.injectEndpoints({
     endpoints: (build) => ({
-        getArticleRating: build.query<IRating[], GetArticleRatingArg >({
+        getArticleRating: build.query<IRating[], GetArticleRatingArg>({
             query: ({ userId, articleId }) => ({
                 url: '/article-ratings',
                 params: {

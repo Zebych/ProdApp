@@ -36,9 +36,12 @@ const AddCommentForm = (props: AddCommentFormProps) => {
     const error = useSelector(getAddCommentFormError);
     const dispatch = useAppDispatch();
 
-    const onCommentTextChange = useCallback((value: string) => {
-        dispatch(addCommentFormActions.setText(value));
-    }, [dispatch]);
+    const onCommentTextChange = useCallback(
+        (value: string) => {
+            dispatch(addCommentFormActions.setText(value));
+        },
+        [dispatch],
+    );
 
     const onSendHandler = useCallback(() => {
         onSendComment(text || '');
@@ -46,28 +49,26 @@ const AddCommentForm = (props: AddCommentFormProps) => {
     }, [onCommentTextChange, onSendComment, text]);
 
     if (error) {
-        return (
-            <div>{error}</div>
-        );
+        return <div>{error}</div>;
     }
 
     return (
         <DynamicModuleLoader reducers={reducers}>
             <HStack
-                data-testid={'AddCommentForm'}
+                data-testid="AddCommentForm"
                 justify="between"
                 max
                 className={classNames(cls.AddCommentForm, {}, [className])}
             >
                 <Input
-                    data-testid={'AddCommentForm.Input'}
+                    data-testid="AddCommentForm.Input"
                     placeholder={t('Введите текст комментария')}
                     value={text}
                     onChange={onCommentTextChange}
                     className={cls.input}
                 />
                 <Button
-                    data-testid={'AddCommentForm.Button'}
+                    data-testid="AddCommentForm.Button"
                     onClick={onSendHandler}
                     theme={ButtonTheme.OUTLINE}
                 >
@@ -75,7 +76,6 @@ const AddCommentForm = (props: AddCommentFormProps) => {
                 </Button>
             </HStack>
         </DynamicModuleLoader>
-
     );
 };
 

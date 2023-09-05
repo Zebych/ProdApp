@@ -9,11 +9,13 @@ import { NotFoundPage } from '@/pages/NotFoundPage';
 import { AboutPage } from '@/pages/AboutPage';
 import {
     AppRoutes,
-    getRouteAbout, getRouteAdminPanel,
+    getRouteAbout,
+    getRouteAdminPanel,
     getRouteArticleCreate,
     getRouteArticleDetails,
     getRouteArticleEdit,
-    getRouteArticles, getRouteForbidden,
+    getRouteArticles,
+    getRouteForbidden,
     getRouteMain,
     getRouteProfile,
 } from '@/shared/const/router';
@@ -70,5 +72,4 @@ export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
         path: '*',
         element: <NotFoundPage />,
     },
-
 };

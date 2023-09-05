@@ -13,7 +13,9 @@ export default {
     },
 } as ComponentMeta<typeof ArticlesRecommendationsList>;
 
-const Template: ComponentStory<typeof ArticlesRecommendationsList> = (args) => <ArticlesRecommendationsList {...args} />;
+const Template: ComponentStory<typeof ArticlesRecommendationsList> = (args) => (
+    <ArticlesRecommendationsList {...args} />
+);
 
 const article: Article = {
     id: '1',
@@ -31,9 +33,7 @@ const article: Article = {
     blocks: [],
 };
 export const Normal = Template.bind({});
-Normal.args = {
-
-};
+Normal.args = {};
 Normal.decorators = [StoreDecorator({})];
 Normal.parameters = {
     mockData: [

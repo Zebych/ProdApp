@@ -12,9 +12,9 @@ export default {
     },
 } as ComponentMeta<typeof TextComponent>;
 
-const Template: ComponentStory<typeof TextComponent> = (
-    args,
-) => <TextComponent {...args} />;
+const Template: ComponentStory<typeof TextComponent> = (args) => (
+    <TextComponent {...args} />
+);
 
 export const Primary = Template.bind({});
 Primary.args = {

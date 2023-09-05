@@ -1,4 +1,4 @@
-export type Mods = Record<string, boolean | string | undefined>
+export type Mods = Record<string, boolean | string | undefined>;
 
 export function classNames(
     cls: string,
@@ -12,7 +12,5 @@ export function classNames(
             // eslint-disable-next-line no-unused-vars
             .filter(([_, value]) => Boolean(value))
             .map(([className]) => className),
-    ]
-
-        .join(' ');
+    ].join(' ');
 }

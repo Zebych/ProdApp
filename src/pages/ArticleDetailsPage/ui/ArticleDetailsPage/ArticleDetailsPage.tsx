@@ -19,7 +19,7 @@ interface ArticleDetailsPageProps {
     className?: string;
 }
 
-const reducers:ReducersList = {
+const reducers: ReducersList = {
     articlesDetailsPage: articleDetailsPageReducer,
 };
 
@@ -33,7 +33,9 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
 
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
-            <Page className={classNames(cls.ArticleDetailsPage, {}, [className])}>
+            <Page
+                className={classNames(cls.ArticleDetailsPage, {}, [className])}
+            >
                 <VStack gap="16" max>
                     <ArticleDetailsPageHeader />
                     <ArticleDetails id={id} />
@@ -43,7 +45,6 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
                 </VStack>
             </Page>
         </DynamicModuleLoader>
-
     );
 };
 

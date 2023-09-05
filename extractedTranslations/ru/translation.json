@@ -1,111 +1,111 @@
 {
-  "": "",
-  "ARTICLES PAGE": "ARTICLES PAGE",
-  "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
-    " Asperiores culpa deserunt fuga labore laudantium nihil, quas totam voluptatibus": {
-      "Aut, nulla!": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores culpa deserunt fuga labore laudantium nihil, quas totam voluptatibus.Aut, nulla!"
-    },
-    " Aspernatur consequuntur est ex expedita facilis incidunt ipsa neque, perspiciatis quasi quis quod temporibus vel, vitae voluptas voluptate": {
-      " Accusantium consequatur enim eum exercitationem id molestiae odit quidem ratione reiciendis, rem sequi temporibus tenetur unde": {
-        " Architecto asperiores aspernatur distinctio doloremque, eum fugiat in iste maiores nihil nobis quae quaerat repellendus sint unde vel! A deleniti dignissimos, et fuga fugit illo modi nemo obcaecati possimus praesentium, sed voluptatem": {
-          " A ad alias assumenda commodi consectetur dolor dolore harum, in iusto laudantium maiores nostrum omnis, pariatur quidem quis quisquam quo recusandae reiciendis rem saepe sapiente, ullam voluptas voluptates": {
-            " Ab architecto atque beatae consequuntur culpa dolorum est in odio voluptatem voluptatibus! Aliquid inventore quasi repudiandae totam": {
-              " Aliquam cumque fugiat necessitatibus neque qui": {
-                " A accusantium alias amet consectetur culpa deserunt doloremque error facere iure laudantium molestiae mollitia nemo neque nesciunt nihil non, obcaecati officia praesentium quaerat quisquam rem repellat rerum sint sit soluta suscipit tempora ut! Debitis distinctio eaque exercitationem, fugit qui reprehenderit rerum velit": {
-                  " Ad cum dolorem ea eveniet excepturi expedita id omnis rem": {
-                    " Aliquam aliquid amet fuga, iste recusandae totam? A accusantium doloremque esse expedita fuga, hic impedit obcaecati quis quos repudiandae sed, soluta sunt veritatis": {
-                      "": ""
+    "": "",
+    "ARTICLES PAGE": "ARTICLES PAGE",
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
+        " Asperiores culpa deserunt fuga labore laudantium nihil, quas totam voluptatibus": {
+            "Aut, nulla!": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores culpa deserunt fuga labore laudantium nihil, quas totam voluptatibus.Aut, nulla!"
+        },
+        " Aspernatur consequuntur est ex expedita facilis incidunt ipsa neque, perspiciatis quasi quis quod temporibus vel, vitae voluptas voluptate": {
+            " Accusantium consequatur enim eum exercitationem id molestiae odit quidem ratione reiciendis, rem sequi temporibus tenetur unde": {
+                " Architecto asperiores aspernatur distinctio doloremque, eum fugiat in iste maiores nihil nobis quae quaerat repellendus sint unde vel! A deleniti dignissimos, et fuga fugit illo modi nemo obcaecati possimus praesentium, sed voluptatem": {
+                    " A ad alias assumenda commodi consectetur dolor dolore harum, in iusto laudantium maiores nostrum omnis, pariatur quidem quis quisquam quo recusandae reiciendis rem saepe sapiente, ullam voluptas voluptates": {
+                        " Ab architecto atque beatae consequuntur culpa dolorum est in odio voluptatem voluptatibus! Aliquid inventore quasi repudiandae totam": {
+                            " Aliquam cumque fugiat necessitatibus neque qui": {
+                                " A accusantium alias amet consectetur culpa deserunt doloremque error facere iure laudantium molestiae mollitia nemo neque nesciunt nihil non, obcaecati officia praesentium quaerat quisquam rem repellat rerum sint sit soluta suscipit tempora ut! Debitis distinctio eaque exercitationem, fugit qui reprehenderit rerum velit": {
+                                    " Ad cum dolorem ea eveniet excepturi expedita id omnis rem": {
+                                        " Aliquam aliquid amet fuga, iste recusandae totam? A accusantium doloremque esse expedita fuga, hic impedit obcaecati quis quos repudiandae sed, soluta sunt veritatis": {
+                                            "": ""
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
-                  }
                 }
-              }
             }
-          }
         }
-      }
-    }
-  },
-  "ProdApp": "ProdApp",
-  "add5": "add5",
-  "addFive": "addFive",
-  "decrement": "decrement",
-  "increment": "increment",
-  "throw error": "throw error",
-  "Админ панель": "Админ панель",
-  "Админка": "Админка",
-  "Айти": "Айти",
-  "Ваш отзыв": "Ваш отзыв",
-  "Ваша возраст": "Ваша возраст",
-  "Ваша город": "Ваша город",
-  "Ваша фамилия": "Ваша фамилия",
-  "Ваше имя": "Ваше имя",
-  "Введите username": "Введите username",
-  "Введите пароль": "Введите пароль",
-  "Введите ссылку на аватар": "Введите ссылку на аватар",
-  "Введите текст комментария": "Введите текст комментария",
-  "Ведите имя пользователя": "Ведите имя пользователя",
-  "Войти": "Войти",
-  "Все статьи": "Все статьи",
-  "Вы ввели неверный логин или пароль": "Вы ввели неверный логин или пароль",
-  "Выйти": "Выйти",
-  "Главная ": "Главная ",
-  "Главная страница": "Главная страница",
-  "Данныйе не указаны": "Данныйе не указаны",
-  "Закрыть": "Закрыть",
-  "Имя и фамилия обязательны": "Имя и фамилия обязательны",
-  "Комментарии отсутствуют": "Комментарии отсутствуют",
-  "Комментарий": "Комментарий",
-  "Назад к списку": "Назад к списку",
-  "Наука": "Наука",
-  "Некорректный возраст": "Некорректный возраст",
-  "Некорректный регион": "Некорректный регион",
-  "О сайте": "О сайте",
-  "Обновить страницу": "Обновить страницу",
-  "Оставьте свой отзыв о статье,это поможет улучшить качество": "Оставьте свой отзыв о статье,это поможет улучшить качество",
-  "Отменить": "Отменить",
-  "Отправить": "Отправить",
-  "Оцените статью": "Оцените статью",
-  "Ошибка при загрузке статей": "Ошибка при загрузке статей",
-  "Переключить": "Переключить",
-  "Поиск": "Поиск",
-  "Попробуйте обновить страницу": "Попробуйте обновить страницу",
-  "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
-  "Произошла ошибка при загрузке профиля": "Произошла ошибка при загрузке профиля",
-  "Произошла ошибка при загрузке статьи": "Произошла ошибка при загрузке статьи",
-  "Профиль": "Профиль",
-  "Профиль не найден": "Профиль не найден",
-  "Профиль пользователя": "Профиль пользователя",
-  "Редактирование статьи с ID = ": "Редактирование статьи с ID = ",
-  "Редактировать": "Редактировать",
-  "Рекомендации": "Рекомендации",
-  "Рекомендуем": "Рекомендуем",
-  "Серверная ошибка при сохранении": "Серверная ошибка при сохранении",
-  "Создание новой статьи": "Создание новой статьи",
-  "Создать статью": "Создать статью",
-  "Сортировать ПО": "Сортировать ПО",
-  "Сохранить": "Сохранить",
-  "Спасибо за оценку": "Спасибо за оценку",
-  "Статьи не найдены": "Статьи не найдены",
-  "Статья не найдена": "Статья не найдена",
-  "Страница не найдена": "Страница не найдена",
-  "Страница профиля": "Страница профиля",
-  "У вас нет доступа к этой странице": "У вас нет доступа к этой странице",
-  "Укажите валюту": "Укажите валюту",
-  "Укажите страну": "Укажите страну",
-  "Форма авторизации": "Форма авторизации",
-  "Читать далее": {
-    "": {
-      "": {
-        "": ""
-      }
-    }
-  },
-  "Экономика": "Экономика",
-  "Язык": "Язык",
-  "возрастанию": "возрастанию",
-  "дате создания": "дате создания",
-  "названию": "названию",
-  "по": "по",
-  "просмотрам": "просмотрам",
-  "убыванию": "убыванию"
+    },
+    "ProdApp": "ProdApp",
+    "add5": "add5",
+    "addFive": "addFive",
+    "decrement": "decrement",
+    "increment": "increment",
+    "throw error": "throw error",
+    "Админ панель": "Админ панель",
+    "Админка": "Админка",
+    "Айти": "Айти",
+    "Ваш отзыв": "Ваш отзыв",
+    "Ваша возраст": "Ваша возраст",
+    "Ваша город": "Ваша город",
+    "Ваша фамилия": "Ваша фамилия",
+    "Ваше имя": "Ваше имя",
+    "Введите username": "Введите username",
+    "Введите пароль": "Введите пароль",
+    "Введите ссылку на аватар": "Введите ссылку на аватар",
+    "Введите текст комментария": "Введите текст комментария",
+    "Ведите имя пользователя": "Ведите имя пользователя",
+    "Войти": "Войти",
+    "Все статьи": "Все статьи",
+    "Вы ввели неверный логин или пароль": "Вы ввели неверный логин или пароль",
+    "Выйти": "Выйти",
+    "Главная ": "Главная ",
+    "Главная страница": "Главная страница",
+    "Данныйе не указаны": "Данныйе не указаны",
+    "Закрыть": "Закрыть",
+    "Имя и фамилия обязательны": "Имя и фамилия обязательны",
+    "Комментарии отсутствуют": "Комментарии отсутствуют",
+    "Комментарий": "Комментарий",
+    "Назад к списку": "Назад к списку",
+    "Наука": "Наука",
+    "Некорректный возраст": "Некорректный возраст",
+    "Некорректный регион": "Некорректный регион",
+    "О сайте": "О сайте",
+    "Обновить страницу": "Обновить страницу",
+    "Оставьте свой отзыв о статье,это поможет улучшить качество": "Оставьте свой отзыв о статье,это поможет улучшить качество",
+    "Отменить": "Отменить",
+    "Отправить": "Отправить",
+    "Оцените статью": "Оцените статью",
+    "Ошибка при загрузке статей": "Ошибка при загрузке статей",
+    "Переключить": "Переключить",
+    "Поиск": "Поиск",
+    "Попробуйте обновить страницу": "Попробуйте обновить страницу",
+    "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
+    "Произошла ошибка при загрузке профиля": "Произошла ошибка при загрузке профиля",
+    "Произошла ошибка при загрузке статьи": "Произошла ошибка при загрузке статьи",
+    "Профиль": "Профиль",
+    "Профиль не найден": "Профиль не найден",
+    "Профиль пользователя": "Профиль пользователя",
+    "Редактирование статьи с ID = ": "Редактирование статьи с ID = ",
+    "Редактировать": "Редактировать",
+    "Рекомендации": "Рекомендации",
+    "Рекомендуем": "Рекомендуем",
+    "Серверная ошибка при сохранении": "Серверная ошибка при сохранении",
+    "Создание новой статьи": "Создание новой статьи",
+    "Создать статью": "Создать статью",
+    "Сортировать ПО": "Сортировать ПО",
+    "Сохранить": "Сохранить",
+    "Спасибо за оценку": "Спасибо за оценку",
+    "Статьи не найдены": "Статьи не найдены",
+    "Статья не найдена": "Статья не найдена",
+    "Страница не найдена": "Страница не найдена",
+    "Страница профиля": "Страница профиля",
+    "У вас нет доступа к этой странице": "У вас нет доступа к этой странице",
+    "Укажите валюту": "Укажите валюту",
+    "Укажите страну": "Укажите страну",
+    "Форма авторизации": "Форма авторизации",
+    "Читать далее": {
+        "": {
+            "": {
+                "": ""
+            }
+        }
+    },
+    "Экономика": "Экономика",
+    "Язык": "Язык",
+    "возрастанию": "возрастанию",
+    "дате создания": "дате создания",
+    "названию": "названию",
+    "по": "по",
+    "просмотрам": "просмотрам",
+    "убыванию": "убыванию"
 }

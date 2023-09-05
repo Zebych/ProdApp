@@ -19,36 +19,43 @@ export default {
 } as ComponentMeta<typeof ProfilePage>;
 
 // eslint-disable-next-line react/jsx-props-no-spreading
-const Template: ComponentStory<typeof ProfilePage> = (args) => <ProfilePage {...args} />;
+const Template: ComponentStory<typeof ProfilePage> = (args) => (
+    <ProfilePage {...args} />
+);
 
 export const Normal = Template.bind({});
 Normal.args = {};
-Normal.decorators = [StoreDecorator({
-    profile: {
-        form: {
-            username: 'admin',
-            age: 36,
-            country: Country.Russia,
-            lastname: 'Агро',
-            first: 'Розарио',
-            city: 'Москва',
-            currency: Currency.RUB,
+Normal.decorators = [
+    StoreDecorator({
+        profile: {
+            form: {
+                username: 'admin',
+                age: 36,
+                country: Country.Russia,
+                lastname: 'Агро',
+                first: 'Розарио',
+                city: 'Москва',
+                currency: Currency.RUB,
+            },
         },
-    },
-})];
+    }),
+];
 
 export const Dark = Template.bind({});
 Dark.args = {};
-Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({
-    profile: {
-        form: {
-            username: 'admin',
-            age: 36,
-            country: Country.Russia,
-            lastname: 'Агро',
-            first: 'Розарио',
-            city: 'Москва',
-            currency: Currency.RUB,
+Dark.decorators = [
+    ThemeDecorator(Theme.DARK),
+    StoreDecorator({
+        profile: {
+            form: {
+                username: 'admin',
+                age: 36,
+                country: Country.Russia,
+                lastname: 'Агро',
+                first: 'Розарио',
+                city: 'Москва',
+                currency: Currency.RUB,
+            },
         },
-    },
-})];
+    }),
+];
