@@ -57,6 +57,8 @@ module.exports = {
                     'align',
                     'direction',
                     'feature',
+                    'color',
+                    'variant',
                 ],
             },
         ],
