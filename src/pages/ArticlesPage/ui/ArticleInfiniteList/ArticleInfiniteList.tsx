@@ -1,8 +1,8 @@
 import { memo } from 'react';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
+import { TextComponent } from '@/shared/ui/deprecated/Text';
 import { ArticleList } from '@/entities/Article';
-import { TextComponent } from '@/shared/ui/Text';
 import {
     getArticlesPageError,
     getArticlesPageIsLoading,

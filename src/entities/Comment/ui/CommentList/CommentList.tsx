@@ -1,8 +1,8 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
+import { TextComponent } from '@/shared/ui/deprecated/Text';
+import { VStack } from '@/shared/ui/deprecated/Stack';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { TextComponent } from '@/shared/ui/Text';
-import { VStack } from '@/shared/ui/Stack';
 import { CommentCard } from '../CommentCard/CommentCard';
 import { IComment } from '../../model/types/comment';
 

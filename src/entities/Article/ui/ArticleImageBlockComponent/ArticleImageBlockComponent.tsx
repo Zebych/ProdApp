@@ -1,6 +1,6 @@
 import { memo } from 'react';
+import { TextAlign, TextComponent } from '@/shared/ui/deprecated/Text';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { TextAlign, TextComponent } from '@/shared/ui/Text';
 import { ArticleImageBlock } from '../../model/types/article.types';
 import cls from './ArticleImageBlockComponent.module.scss';
 
