@@ -8,7 +8,7 @@ import {
     getArticlesPageIsLoading,
     getArticlesPageView,
 } from '../../model/selectors/articlesPageSelectors';
-import { getArticles } from '../../model/slices/articlePageSlace';
+import { getArticles } from '../../model/slices/articlesPageSlace';
 
 interface ArticleInfiniteListProps {
     className?: string;
