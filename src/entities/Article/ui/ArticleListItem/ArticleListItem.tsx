@@ -1,10 +1,10 @@
 import { HTMLAttributeAnchorTarget, memo } from 'react';
 import { useTranslation } from 'react-i18next';
+import { AppImage } from '@/shared/ui/redesigned/AppImage';
 import { Card } from '@/shared/ui/deprecated/Card';
 import { Avatar } from '@/shared/ui/deprecated/Avatar';
 import { Button, ButtonTheme } from '@/shared/ui/deprecated/Button';
 import { AppLink } from '@/shared/ui/deprecated/AppLink';
-import { AppImage } from '@/shared/ui/deprecated/AppImage';
 import { TextComponent } from '@/shared/ui/deprecated/Text';
 import { Skeleton } from '@/shared/ui/deprecated/Skeleton';
 import { classNames } from '@/shared/lib/classNames/classNames';

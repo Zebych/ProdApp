@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import { HStack } from '@/shared/ui/deprecated/Stack';
+import { HStack } from 'src/shared/ui/redesigned/Stack';
 import cls from './AppLogo.module.scss';
 import AppSvg from '../../../assets/icons/star.svg';
 import { classNames } from '@/shared/lib/classNames/classNames';

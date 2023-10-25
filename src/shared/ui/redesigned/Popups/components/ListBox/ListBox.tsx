@@ -1,14 +1,14 @@
-import { Fragment, memo, ReactNode } from 'react';
+import { Fragment, ReactNode } from 'react';
 import { Listbox as HListBox } from '@headlessui/react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { DropdownDirection } from '@/shared/types/ui';
-import { mapDirectionClass } from '../../styles/consts';
-import { Button } from '@/shared/ui/deprecated/Button/Button';
 import { HStack } from '../../../../redesigned/Stack';
+import { Button } from '../../../Button/Button';
 import cls from './ListBox.module.scss';
+import { mapDirectionClass } from '../../styles/consts';
 import popupCls from '../../styles/popup.module.scss';
 
-interface ListBoxItem {
+export interface ListBoxItem {
     value: string;
     content: ReactNode;
     disabled?: boolean;
@@ -18,30 +18,26 @@ interface ListBoxProps {
     items?: ListBoxItem[];
     className?: string;
     value?: string;
-    defaultValue?: string | null;
+    defaultValue?: string;
     onChange: (value: string) => void;
     readonly?: boolean;
     direction?: DropdownDirection;
-    label?: string | null;
+    label?: string;
 }
 
-/**
- * Устарел, используем новые компоненты из папки redesigned
- * @deprecated
- */
-export const ListBox = memo((props: ListBoxProps) => {
+export function ListBox(props: ListBoxProps) {
     const {
         className,
         items,
         value,
-        onChange,
         defaultValue,
+        onChange,
         readonly,
         direction = 'bottom right',
         label,
     } = props;
 
-    const optionsClasses = [mapDirectionClass[direction]];
+    const optionsClasses = [mapDirectionClass[direction], popupCls.menu];
 
     return (
         <HStack gap="4">
@@ -56,7 +52,11 @@ export const ListBox = memo((props: ListBoxProps) => {
                 value={value}
                 onChange={onChange}
             >
-                <HListBox.Button className={cls.trigger}>
+                {/* <HListBox.Button disabled={readonly} className={cls.trigger}> */}
+                <HListBox.Button
+                    aria-disabled={readonly}
+                    className={cls.trigger}
+                >
                     <Button disabled={readonly}>{value ?? defaultValue}</Button>
                 </HListBox.Button>
                 <HListBox.Options
@@ -86,4 +86,4 @@ export const ListBox = memo((props: ListBoxProps) => {
             </HListBox>
         </HStack>
     );
-});
+}

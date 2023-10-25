@@ -1,8 +1,8 @@
 import { memo, Suspense, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
+import { VStack } from '@/shared/ui/redesigned/Stack';
 import { TextComponent, TextSize } from '@/shared/ui/deprecated/Text';
-import { VStack } from '@/shared/ui/deprecated/Stack';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { AddCommentForm } from '@/features/addCommentForm';
 import { CommentList } from '@/entities/Comment';

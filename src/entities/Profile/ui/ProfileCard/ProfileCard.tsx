@@ -1,11 +1,11 @@
 import { useTranslation } from 'react-i18next';
+import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 import { Avatar } from '@/shared/ui/deprecated/Avatar';
 import {
     TextComponent,
     TextAlign,
     TextTheme,
 } from '@/shared/ui/deprecated/Text';
-import { HStack, VStack } from '@/shared/ui/deprecated/Stack';
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import { Input } from '@/shared/ui/deprecated/Input';
 import { Loader } from '@/shared/ui/deprecated/Loader';
