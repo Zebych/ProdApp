@@ -5,7 +5,7 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './NotificationItem.module.scss';
 import { Notification } from '../../model/types/notification';
 import { ToggleFeatures } from '@/shared/lib/features';
-import { TextField } from '@/shared/ui/redesigned/Text';
+import { DisplayText } from '@/shared/ui/redesigned/Text';
 import { Card } from '@/shared/ui/redesigned/Card';
 
 interface NotificationItemProps {
@@ -25,7 +25,7 @@ export const NotificationItem = memo((props: NotificationItemProps) => {
                         className,
                     ])}
                 >
-                    <TextField title={item.title} text={item.description} />
+                    <DisplayText title={item.title} text={item.description} />
                 </Card>
             }
             off={

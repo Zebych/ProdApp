@@ -8,7 +8,7 @@ import { ArticleSortField } from '@/entities/Article';
 import { ToggleFeatures } from '@/shared/lib/features';
 import { ListBox } from '@/shared/ui/redesigned/Popups';
 import { VStack } from '@/shared/ui/redesigned/Stack';
-import { TextField } from '@/shared/ui/redesigned/Text';
+import { DisplayText } from '@/shared/ui/redesigned/Text';
 
 interface ArticleSortSelectorProps {
     className?: string;
@@ -65,7 +65,7 @@ export const ArticleSortSelector = memo((props: ArticleSortSelectorProps) => {
                         [className],
                     )}
                 >
-                    <TextField text={t('Сортировать по:')} />
+                    <DisplayText text={t('Сортировать по:')} />
                     <VStack gap="8">
                         <ListBox
                             value={sort}

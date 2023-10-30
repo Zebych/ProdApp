@@ -8,13 +8,13 @@ import { CurrencySelect } from '@/entities/Currency';
 import { CountrySelect } from '@/entities/Country';
 import { Card } from '@/shared/ui/redesigned/Card';
 import { Skeleton } from '@/shared/ui/redesigned/Skeleton';
-import { TextField } from '@/shared/ui/redesigned/Text';
+import { DisplayText } from '@/shared/ui/redesigned/Text';
 
 export const ProfileCardRedesignedError = () => {
     const { t } = useTranslation('profile');
     return (
         <HStack justify="center" max>
-            <TextField
+            <DisplayText
                 variant="error"
                 title={t('Произошла ошибка при загрузке профиля')}
                 text={t('Попробуйте обновить страницу')}

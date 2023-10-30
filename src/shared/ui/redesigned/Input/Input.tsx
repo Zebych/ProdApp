@@ -9,7 +9,7 @@ import React, {
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import cls from './Input.module.scss';
 import { HStack } from '@/shared/ui/redesigned/Stack';
-import { TextField } from '@/shared/ui/redesigned/Text';
+import { DisplayText } from '@/shared/ui/redesigned/Text';
 
 type HTMLInputProps = Omit<
     InputHTMLAttributes<HTMLInputElement>,
@@ -101,7 +101,7 @@ export const Input = memo((props: InputProps) => {
     if (label) {
         return (
             <HStack max gap="8">
-                <TextField text={label} />
+                <DisplayText text={label} />
                 {input}
             </HStack>
         );
