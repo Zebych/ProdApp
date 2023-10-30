@@ -28,7 +28,8 @@
         "prepare": "husky install",
         "generate:slice": "node ./scripts/createSlice/index.js",
         "update:imports": "ts-node scripts/refactoring/updateImports.ts",
-        "postinstall": "node ./scripts/clear-cache.js"
+        "postinstall": "node ./scripts/clear-cache.js",
+        "remove-feature": "ts-node ./scripts/remove-feature.ts"
     },
     "lint-staged": {
         "**/*.{ts,tsx}": [
