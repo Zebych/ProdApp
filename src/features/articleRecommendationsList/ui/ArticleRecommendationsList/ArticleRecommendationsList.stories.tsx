@@ -3,18 +3,18 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
 import { Article } from '@/entities/Article';
-import { ArticlesRecommendationsList } from './ArticlesRecommendationsList';
+import { ArticleRecommendationsList } from './ArticleRecommendationsList';
 
 export default {
-    title: 'features/ArticlesRecommendationsList',
-    component: ArticlesRecommendationsList,
+    title: 'features/ArticleRecommendationsList',
+    component: ArticleRecommendationsList,
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-} as ComponentMeta<typeof ArticlesRecommendationsList>;
+} as ComponentMeta<typeof ArticleRecommendationsList>;
 
-const Template: ComponentStory<typeof ArticlesRecommendationsList> = (args) => (
-    <ArticlesRecommendationsList {...args} />
+const Template: ComponentStory<typeof ArticleRecommendationsList> = (args) => (
+    <ArticleRecommendationsList {...args} />
 );
 
 const article: Article = {

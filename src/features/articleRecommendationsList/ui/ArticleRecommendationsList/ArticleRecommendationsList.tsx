@@ -10,7 +10,7 @@ interface ArticlesRecommendationsListProps {
     className?: string;
 }
 
-export const ArticlesRecommendationsList = memo(
+export const ArticleRecommendationsList = memo(
     (props: ArticlesRecommendationsListProps) => {
         const { className } = props;
         const { t } = useTranslation();
@@ -26,7 +26,7 @@ export const ArticlesRecommendationsList = memo(
 
         return (
             <VStack
-                data-testid="ArticlesRecommendationsList"
+                data-testid="ArticleRecommendationsList"
                 gap="8"
                 className={classNames('', {}, [className])}
             >

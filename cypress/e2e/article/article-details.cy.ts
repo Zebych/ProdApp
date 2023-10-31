@@ -16,7 +16,7 @@ describe('Пользователь заходит на страницу стат
         cy.getByTestId('ArticleDetails.Info').should('exist');
     });
     it('И видит список рекомендаций', () => {
-        cy.getByTestId('ArticlesRecommendationsList').should('exist');
+        cy.getByTestId('ArticleRecommendationsList').should('exist');
     });
     it('И оставляет комментарий', () => {
         cy.getByTestId('ArticleDetails.Info');

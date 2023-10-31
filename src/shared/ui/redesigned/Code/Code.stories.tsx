@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { Code } from './Code';
 
@@ -8,9 +8,6 @@ export default {
     component: Code,
     argTypes: {
         backgroundColor: { control: 'color' },
-    },
-    args: {
-        to: '/',
     },
 } as ComponentMeta<typeof Code>;
 
@@ -25,10 +22,9 @@ Normal.args = {
         '    argTypes: {\n' +
         "        backgroundColor: { control: 'color' },\n" +
         '    },\n' +
-        '    args: {\n' +
-        "        to: '/',\n" +
-        '    },\n' +
         '} as ComponentMeta<typeof Code>;\n' +
         '\n' +
-        'const Template: ComponentStory<typeof Code> = (args) => <Code {...args} />;',
+        'const Template: ComponentStory<typeof Code> = (args) => <Code {...args} />;\n' +
+        '\n' +
+        'export const Normal = Template.bind({});',
 };
