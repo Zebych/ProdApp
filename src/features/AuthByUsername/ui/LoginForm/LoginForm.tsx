@@ -25,6 +25,7 @@ import { Button } from '@/shared/ui/redesigned/Button';
 import { Input } from '@/shared/ui/redesigned/Input';
 import { DisplayText } from '@/shared/ui/redesigned/Text';
 import { VStack } from '@/shared/ui/redesigned/Stack';
+import { useForceUpdate } from '@/shared/lib/render/forceUpdate';
 
 export interface LoginFormProps {
     className?: string;
@@ -38,6 +39,8 @@ const initialReducers: ReducersList = {
 const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
     const { t } = useTranslation();
     const dispatch = useAppDispatch();
+
+    const forceUpdate = useForceUpdate();
 
     const username = useSelector(getLoginUsername);
     const password = useSelector(getLoginPassword);
@@ -63,8 +66,9 @@ const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
 
         if (result.meta.requestStatus === 'fulfilled') {
             onSuccess();
+            forceUpdate();
         }
-    }, [dispatch, onSuccess, password, username]);
+    }, [dispatch, forceUpdate, onSuccess, password, username]);
 
     return (
         <DynamicModuleLoader removeAfterUnmount reducers={initialReducers}>
