@@ -14,6 +14,8 @@ import { getArticleCommentIsLoading } from '../../model/selectors/comments';
 import { addCommentForArticle } from '../../model/services/addCommentForArticle/addCommentForArticle';
 import { Loader } from '@/shared/ui/deprecated/Loader';
 import { getArticleComments } from '../../model/slices/articleDetailsCommentsSlice';
+import { ToggleFeatures } from '@/shared/lib/features';
+import { DisplayText } from '@/shared/ui/redesigned/Text';
 
 interface ArticleDetailsCommentsProps {
     className?: string;
@@ -42,11 +44,24 @@ export const ArticleDetailsComments = memo(
 
         return (
             <VStack gap="16" max className={classNames('', {}, [className])}>
-                <TextComponent
-                    size={TextSize.L}
-                    className={cls.commentTitle}
-                    text={t('Комментарий')}
+                <ToggleFeatures
+                    feature="isAppRedesigned"
+                    on={
+                        <DisplayText
+                            size="l"
+                            className={cls.commentTitle}
+                            text={t('Комментарий')}
+                        />
+                    }
+                    off={
+                        <TextComponent
+                            size={TextSize.L}
+                            className={cls.commentTitle}
+                            text={t('Комментарий')}
+                        />
+                    }
                 />
+
                 <Suspense fallback={<Loader />}>
                     <AddCommentForm onSendComment={onSendComment} />
                 </Suspense>

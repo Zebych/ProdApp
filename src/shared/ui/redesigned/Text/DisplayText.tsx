@@ -4,7 +4,7 @@ import cls from './Text.module.scss';
 
 export type TextVariant = 'primary' | 'error' | 'accent';
 
-export type TextAlign = 'right' | 'left' | 'center';
+export type TextAlign = 'left' | 'center' | 'right';
 
 export type TextSize = 's' | 'm' | 'l';
 
