@@ -29,7 +29,10 @@ const App = () => {
             <ToggleFeatures
                 feature="isAppRedesigned"
                 on={
-                    <div id="app" className={classNames('app', {}, [theme])}>
+                    <div
+                        id="app"
+                        className={classNames('app_redesigned', {}, [theme])}
+                    >
                         <AppLoaderLayout />
                     </div>
                 }
