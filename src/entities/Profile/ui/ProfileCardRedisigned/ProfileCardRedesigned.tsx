@@ -25,7 +25,7 @@ export const ProfileCardRedesignedError = () => {
 };
 export const ProfileCardRedesignedSkeleton = () => {
     return (
-        <Card max padding="24">
+        <Card max padding="24" border="partial">
             <VStack gap="32">
                 <HStack max justify="center">
                     <Skeleton border="100%" width={128} height={128} />
