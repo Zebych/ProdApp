@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { Skeleton } from 'src/shared/ui/Skeleton';
+import { Skeleton } from '@/shared/ui/Skeleton';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { VStack } from '@/shared/ui/Stack';
 import cls from './LoginModalSkeleton.module.scss';

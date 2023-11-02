@@ -1,7 +1,7 @@
 import { memo } from 'react';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
-import { TextComponent } from '@/shared/ui/deprecated/Text';
+import { DisplayText } from '@/shared/ui/Text';
 import { ArticleList } from '@/entities/Article';
 import {
     getArticlesPageError,
@@ -23,7 +23,7 @@ export const ArticleInfiniteList = memo((props: ArticleInfiniteListProps) => {
     const error = useSelector(getArticlesPageError);
 
     if (error) {
-        return <TextComponent text={t('Ошибка при загрузке статей')} />;
+        return <DisplayText text={t('Ошибка при загрузке статей')} />;
     }
 
     return (

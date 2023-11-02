@@ -17,10 +17,10 @@ import {
     getArticleDetailsIsLoading,
 } from '../../model/selectors/articleDetails';
 import { renderArticleBlock } from './renderBlock';
-import { AppImage } from '@/shared/ui/AppImage';
 import { fetchArticleById } from '../../model/services/fetchArticleById';
 import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';
 import { ArticleDetailsSkeleton } from './ArticleDetailsSkeleton';
+import { AppImage } from '@/shared/ui/AppImage';
 
 interface ArticleDetailsProps {
     className?: string;

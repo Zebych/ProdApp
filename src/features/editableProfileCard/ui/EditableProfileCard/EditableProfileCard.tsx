@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { memo, useCallback } from 'react';
 import { useSelector } from 'react-redux';
 import { VStack } from '@/shared/ui/Stack';
-import { TextComponent, TextTheme } from '@/shared/ui/deprecated/Text';
+import { DisplayText } from '@/shared/ui/Text';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
@@ -121,9 +121,9 @@ export const EditableProfileCard = memo((props: EditableProfileCardProps) => {
                 <EditableProfileCardHeader />
                 {validateErrors?.length &&
                     validateErrors.map((err) => (
-                        <TextComponent
+                        <DisplayText
                             key={err}
-                            theme={TextTheme.ERROR}
+                            variant="error"
                             text={validateErrorTranslate[err]}
                             data-testid="EditableProfileCard.Error"
                         />

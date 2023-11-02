@@ -6,7 +6,7 @@ import React, {
     useRef,
     useState,
 } from 'react';
-import { DisplayText } from 'src/shared/ui/Text';
+import { DisplayText } from '@/shared/ui/Text';
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import cls from './Input.module.scss';
 import { HStack } from '@/shared/ui/Stack';

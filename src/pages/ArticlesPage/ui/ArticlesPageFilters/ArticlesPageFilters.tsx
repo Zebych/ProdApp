@@ -1,13 +1,13 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Card } from '@/shared/ui/deprecated/Card';
+import { Card } from '@/shared/ui/Card';
 import { classNames } from '@/shared/lib/classNames/classNames';
 
 import cls from './ArticlesPageFilters.module.scss';
 import { ArticleSortSelector } from '@/features/ArticleSortSelector';
 import { ArticleViewSelector } from '@/features/ArticleViewSelector';
 import { ArticleTypeTabs } from '@/features/ArticleTypeTabs';
-import { Input } from '@/shared/ui/deprecated/Input';
+import { Input } from '@/shared/ui/Input';
 import { useArticleFilters } from '../../lib/hooks/useArticleFilters';
 
 interface ArticlesPageFiltersProps {

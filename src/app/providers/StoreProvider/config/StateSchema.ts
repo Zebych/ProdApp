@@ -7,7 +7,6 @@ import {
 import { CombinedState } from 'redux';
 import { AxiosInstance } from 'axios';
 import { UserSchema } from '@/entities/User';
-import { CounterSchema } from '@/entities/Couner';
 import { ArticleDetailsSchema } from '@/entities/Article';
 import { ArticleDetailsPageSchema } from '@/pages/ArticleDetailsPage';
 import { AddCommentFormSchema } from '@/features/addCommentForm';
@@ -18,7 +17,6 @@ import { ProfileSchema } from '@/features/editableProfileCard';
 import { LoginSchema } from '../../../../features/AuthByUsername';
 
 export interface StateSchema {
-    counter: CounterSchema;
     user: UserSchema;
     ui: UISchema;
     [rtkApi.reducerPath]: ReturnType<typeof rtkApi.reducer>;

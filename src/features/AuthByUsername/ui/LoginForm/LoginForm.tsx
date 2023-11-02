@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { memo, useCallback } from 'react';
-import { DisplayText } from 'src/shared/ui/Text';
+import { DisplayText } from '@/shared/ui/Text';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import {
     DynamicModuleLoader,
@@ -15,8 +15,8 @@ import { getLoginIsLoading } from '../../model/selectors/getLoginIsLoading/getLo
 import { loginByUsername } from '../../model/services/loginByUsername/loginByUsername';
 import cls from './LoginForm.module.scss';
 import { loginActions, loginReducer } from '../../model/slice/loginSlice';
-import { Button } from '@/shared/ui/redesigned/Button';
-import { Input } from '@/shared/ui/redesigned/Input';
+import { Button } from '@/shared/ui/Button';
+import { Input } from '@/shared/ui/Input';
 import { VStack } from '@/shared/ui/Stack';
 import { useForceUpdate } from '@/shared/lib/render/forceUpdate';
 

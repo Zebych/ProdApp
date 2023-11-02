@@ -1,14 +1,14 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Skeleton } from 'src/shared/ui/Skeleton';
-import { DisplayText } from 'src/shared/ui/Text';
+import { Skeleton } from '@/shared/ui/Skeleton';
+import { DisplayText } from '@/shared/ui/Text';
 import { ProfileCardProps } from '../ProfileCard/ProfileCard';
 import { HStack, VStack } from '@/shared/ui/Stack';
-import { Avatar } from '@/shared/ui/redesigned/Avatar';
-import { Input } from '@/shared/ui/redesigned/Input';
+import { Avatar } from '@/shared/ui/Avatar';
+import { Input } from '@/shared/ui/Input';
 import { CurrencySelect } from '@/entities/Currency';
 import { CountrySelect } from '@/entities/Country';
-import { Card } from '@/shared/ui/redesigned/Card';
+import { Card } from '@/shared/ui/Card';
 
 export const ProfileCardRedesignedError = () => {
     const { t } = useTranslation('profile');

@@ -1,19 +1,19 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Skeleton } from 'src/shared/ui/Skeleton';
-import { DisplayText } from 'src/shared/ui/Text';
+import { Skeleton } from '@/shared/ui/Skeleton';
+import { DisplayText } from '@/shared/ui/Text';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './ArticleListItemRedesigned.module.scss';
 import { ArticleListItemProps } from '../ArticleListItem';
-import { Icon } from '@/shared/ui/redesigned/Icon';
+import { Icon } from '@/shared/ui/Icon';
 import EyeIcon from '@/shared/assets/icons/eye.svg';
 import { ArticleTextBlock } from '../../../model/types/article.types';
-import { Card } from '@/shared/ui/redesigned/Card';
-import { Avatar } from '@/shared/ui/redesigned/Avatar';
-import { AppImage } from '@/shared/ui/redesigned/AppImage';
-import { AppLink } from '@/shared/ui/redesigned/AppLink';
+import { Card } from '@/shared/ui/Card';
+import { Avatar } from '@/shared/ui/Avatar';
+import { AppImage } from '@/shared/ui/AppImage';
+import { AppLink } from '@/shared/ui/AppLink';
 import { getRouteArticleDetails } from '@/shared/const/router';
-import { Button } from '@/shared/ui/redesigned/Button';
+import { Button } from '@/shared/ui/Button';
 import { HStack, VStack } from '@/shared/ui/Stack';
 import {
     ArticleBlockType,

@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { Skeleton as SkeletonRedesigned } from 'src/shared/ui/Skeleton';
+import { Skeleton as SkeletonRedesigned } from '@/shared/ui/Skeleton';
 import { VStack } from '@/shared/ui/Stack';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { NotificationItem } from '../NotificationItem/NotificationItem';

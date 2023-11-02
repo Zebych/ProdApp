@@ -1,7 +1,7 @@
 import { memo, Suspense, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
-import { DisplayText } from 'src/shared/ui/Text';
+import { DisplayText } from '@/shared/ui/Text';
 import { VStack } from '@/shared/ui/Stack';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { AddCommentForm } from '@/features/addCommentForm';
@@ -12,7 +12,7 @@ import { fetchCommentsByArticleId } from '../../model/services/fetchCommentsByAr
 import cls from '../ArticleDetailsPage/ArticleDetailsPage.module.scss';
 import { getArticleCommentIsLoading } from '../../model/selectors/comments';
 import { addCommentForArticle } from '../../model/services/addCommentForArticle/addCommentForArticle';
-import { Loader } from '@/shared/ui/deprecated/Loader';
+import { Loader } from '@/shared/ui/Loader';
 import { getArticleComments } from '../../model/slices/articleDetailsCommentsSlice';
 
 interface ArticleDetailsCommentsProps {

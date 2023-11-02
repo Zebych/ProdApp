@@ -1,21 +1,21 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { ThemeSwitcher } from './ThemeSwitcher';
+import { Loader } from './Loader';
 import { Theme } from '@/shared/const/theme';
 
 export default {
-    title: 'widgets/ThemeSwitcher',
-    component: ThemeSwitcher,
+    title: 'shared/Loader',
+    component: Loader,
     argTypes: {
         backgroundColor: { control: 'color' },
     },
     args: {
         to: '/',
     },
-} as ComponentMeta<typeof ThemeSwitcher>;
+} as ComponentMeta<typeof Loader>;
 
-const Template: ComponentStory<typeof ThemeSwitcher> = () => <ThemeSwitcher />;
+const Template: ComponentStory<typeof Loader> = (args) => <Loader {...args} />;
 
 export const Light = Template.bind({});
 Light.args = {};

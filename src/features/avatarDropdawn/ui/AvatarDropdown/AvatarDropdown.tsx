@@ -14,7 +14,7 @@ import {
     getRouteSettings,
 } from '@/shared/const/router';
 import { Dropdown } from '@/shared/ui/Popups';
-import { Avatar } from '@/shared/ui/redesigned/Avatar/Avatar';
+import { Avatar } from '@/shared/ui/Avatar/Avatar';
 
 interface AvatarDropdownProps {
     className?: string;

@@ -18,9 +18,9 @@ import {
     addCommentFormActions,
     addCommentFormReducer,
 } from '../../model/slice/AddCommentFormSlice';
-import { Input } from '@/shared/ui/redesigned/Input';
-import { Button } from '@/shared/ui/redesigned/Button';
-import { Card } from '@/shared/ui/redesigned/Card';
+import { Input } from '@/shared/ui/Input';
+import { Button } from '@/shared/ui/Button';
+import { Card } from '@/shared/ui/Card';
 
 export interface AddCommentFormProps {
     className?: string;

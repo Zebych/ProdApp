@@ -1,11 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import { memo, useEffect, useState } from 'react';
 import { isMobile } from 'react-device-detect';
-import { TextComponent } from '@/shared/ui/deprecated/Text';
-import { Modal } from '@/shared/ui/redesigned/Modal';
+import { DisplayText } from '@/shared/ui/Text';
+import { Modal } from '@/shared/ui/Modal';
 import { saveJsonSettings, useJsonSettings } from '@/entities/User';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { Drawer } from '@/shared/ui/redesigned/Drawer';
+import { Drawer } from '@/shared/ui/Drawer';
 
 export const ArticlePageGreeting = memo(() => {
     const { t } = useTranslation();
@@ -23,7 +23,7 @@ export const ArticlePageGreeting = memo(() => {
     const onClose = () => setIsOpen(false);
 
     const text = (
-        <TextComponent
+        <DisplayText
             title={t('Добро пожаловать на страницу статей')}
             text={t(
                 'Здесь вы можете искать и просматривать статьи на различные темы',

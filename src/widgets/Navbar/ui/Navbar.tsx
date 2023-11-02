@@ -8,7 +8,7 @@ import { getUserAuthData } from '@/entities/User';
 import { NotificationButton } from '@/features/notificationButton';
 import { AvatarDropdown } from '@/features/avatarDropdawn';
 import cls from './Navbar.module.scss';
-import { Button } from '@/shared/ui/redesigned/Button';
+import { Button } from '@/shared/ui/Button';
 
 interface NavbarProps {
     className?: string;
@@ -32,6 +32,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
     if (authData) {
         return (
             <header className={classNames(mainClass, {}, [className])}>
+                321
                 <HStack gap="16" className={cls.actions}>
                     <NotificationButton />
                     <AvatarDropdown />

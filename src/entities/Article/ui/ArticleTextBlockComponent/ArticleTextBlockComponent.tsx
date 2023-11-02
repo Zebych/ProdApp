@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { DisplayText } from 'src/shared/ui/Text';
+import { DisplayText } from '@/shared/ui/Text';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './ArticleTextBlockComponent.module.scss';
 import { ArticleTextBlock } from '../../model/types/article.types';

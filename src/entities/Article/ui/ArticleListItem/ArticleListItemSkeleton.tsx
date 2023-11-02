@@ -1,7 +1,7 @@
 import { memo } from 'react';
-import { Skeleton as SkeletonRedesigned } from 'src/shared/ui/Skeleton';
+import { Skeleton as SkeletonRedesigned } from '@/shared/ui/Skeleton';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Card as CardRedesigned } from '@/shared/ui/redesigned/Card';
+import { Card as CardRedesigned } from '@/shared/ui/Card';
 import { ArticleView } from '../../model/consts/articleConsts';
 import cls from './ArticleListItem.module.scss';
 
