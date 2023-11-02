@@ -1,11 +1,11 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
+import { DisplayText } from 'src/shared/ui/Text';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './ArticleAdditionalInfo.module.scss';
 import { User } from '@/entities/User';
-import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
+import { HStack, VStack } from '@/shared/ui/Stack';
 import { Avatar } from '@/shared/ui/redesigned/Avatar';
-import { DisplayText } from '@/shared/ui/redesigned/Text';
 import { Button } from '@/shared/ui/redesigned/Button';
 
 interface ArticleAdditionalInfoProps {

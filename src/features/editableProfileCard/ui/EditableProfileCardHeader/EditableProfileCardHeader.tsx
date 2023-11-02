@@ -1,7 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { memo, useCallback } from 'react';
 import { useSelector } from 'react-redux';
-import { HStack } from '@/shared/ui/redesigned/Stack';
+import { DisplayText } from 'src/shared/ui/Text';
+import { HStack } from '@/shared/ui/Stack';
 
 import { classNames } from '@/shared/lib/classNames/classNames';
 
@@ -12,7 +13,6 @@ import { getProfileReadonly } from '../../model/selectors/getProfileReadonly/get
 import { getProfileData } from '../../model/selectors/getProfileData/getProfileData';
 import { updateProfileData } from '../../model/services/updateProfileData/updateProfileData';
 import { Button } from '@/shared/ui/redesigned/Button';
-import { DisplayText } from '@/shared/ui/redesigned/Text';
 import { Card } from '@/shared/ui/redesigned/Card';
 
 interface EditableProfileCardHeaderProps {

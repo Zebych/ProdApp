@@ -1,11 +1,11 @@
 import { memo } from 'react';
-import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
-import { Skeleton as SkeletonRedesigned } from '@/shared/ui/redesigned/Skeleton';
+import { Skeleton as SkeletonRedesigned } from 'src/shared/ui/Skeleton';
+import { DisplayText } from 'src/shared/ui/Text';
+import { HStack, VStack } from '@/shared/ui/Stack';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './CommentCard.module.scss';
 import { IComment } from '../../model/types/comment';
 import { getRouteProfile } from '@/shared/const/router';
-import { DisplayText } from '@/shared/ui/redesigned/Text';
 import { AppLink } from '@/shared/ui/redesigned/AppLink';
 import { Avatar } from '@/shared/ui/redesigned/Avatar';
 import { Card } from '@/shared/ui/redesigned/Card';

@@ -1,5 +1,5 @@
-import { Skeleton as SkeletonRedesigned } from '@/shared/ui/redesigned/Skeleton';
-import { VStack } from '@/shared/ui/redesigned/Stack';
+import { Skeleton as SkeletonRedesigned } from 'src/shared/ui/Skeleton';
+import { VStack } from '@/shared/ui/Stack';
 import cls from './ArticleDetails.module.scss';
 
 export const ArticleDetailsSkeleton = () => {

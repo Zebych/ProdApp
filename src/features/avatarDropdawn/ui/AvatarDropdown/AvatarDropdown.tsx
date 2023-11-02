@@ -13,7 +13,7 @@ import {
     getRouteProfile,
     getRouteSettings,
 } from '@/shared/const/router';
-import { Dropdown } from '@/shared/ui/redesigned/Popups';
+import { Dropdown } from '@/shared/ui/Popups';
 import { Avatar } from '@/shared/ui/redesigned/Avatar/Avatar';
 
 interface AvatarDropdownProps {

@@ -7,7 +7,7 @@ import { ArticleListItemSkeleton } from '../ArticleListItem/ArticleListItemSkele
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
 import cls from './ArticleList.module.scss';
 import { Article } from '../../model/types/article.types';
-import { HStack } from '@/shared/ui/redesigned/Stack';
+import { HStack } from '@/shared/ui/Stack';
 
 interface ArticleListProps {
     className?: string;

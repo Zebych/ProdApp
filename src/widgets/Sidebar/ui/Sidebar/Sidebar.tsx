@@ -1,5 +1,5 @@
 import React, { memo, useMemo, useState } from 'react';
-import { VStack } from '@/shared/ui/redesigned/Stack';
+import { VStack } from '@/shared/ui/Stack';
 import { AppLogo } from '@/shared/ui/redesigned/AppLogo';
 import { ThemeSwitcher } from '@/features/ThemeSwitcher';
 import { LangSwitcher } from '@/features/LangSwitcher';

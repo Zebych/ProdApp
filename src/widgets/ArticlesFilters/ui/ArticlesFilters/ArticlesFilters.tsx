@@ -6,7 +6,7 @@ import cls from './ArticlesFilters.module.scss';
 import { Card } from '@/shared/ui/redesigned/Card';
 import { ArticleSortSelector } from '@/features/ArticleSortSelector';
 import { ArticleTypeTabs } from '@/features/ArticleTypeTabs';
-import { VStack } from '@/shared/ui/redesigned/Stack';
+import { VStack } from '@/shared/ui/Stack';
 import { ArticleSortField, ArticleType } from '@/entities/Article';
 import { SortOrder } from '@/shared/types/sort';
 import { Input } from '@/shared/ui/redesigned/Input';

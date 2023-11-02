@@ -1,12 +1,12 @@
 import { memo, useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BrowserView, MobileView } from 'react-device-detect';
-import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
+import { StarRating } from 'src/shared/ui/StarRating';
+import { DisplayText } from 'src/shared/ui/Text';
+import { HStack, VStack } from '@/shared/ui/Stack';
 
-import { StarRating } from '@/shared/ui/deprecated/StarRating';
 import { Modal } from '@/shared/ui/redesigned/Modal';
 import { Drawer } from '@/shared/ui/redesigned/Drawer';
-import { DisplayText } from '@/shared/ui/redesigned/Text';
 import { Input } from '@/shared/ui/redesigned/Input';
 import { Button } from '@/shared/ui/redesigned/Button';
 import { Card } from '@/shared/ui/redesigned/Card';

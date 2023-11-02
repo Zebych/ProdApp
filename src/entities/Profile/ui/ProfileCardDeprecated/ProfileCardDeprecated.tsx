@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import cls from './ProfileCardDeprecated.module.scss';
-import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
+import { HStack, VStack } from '@/shared/ui/Stack';
 import { Avatar as AvatarDeprecated } from '@/shared/ui/deprecated/Avatar';
 import { Input as InputDeprecated } from '@/shared/ui/deprecated/Input';
 import { CurrencySelect } from '@/entities/Currency';
