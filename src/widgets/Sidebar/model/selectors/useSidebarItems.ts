@@ -1,9 +1,6 @@
 import { useSelector } from 'react-redux';
 import { getUserAuthData } from '@/entities/User';
 import HomeIconDeprecated from '@/shared/assets/icons/home.svg';
-import ListIconDeprecated from '@/shared/assets/icons/list.svg';
-import ProfileIconDeprecated from '@/shared/assets/icons/profile.svg';
-import ArticleIconDeprecated from '@/shared/assets/icons/сontract.svg';
 
 import ArticleIcon from '@/shared/assets/icons/article.svg';
 import AboutIcon from '@/shared/assets/icons/Info.svg';
@@ -16,7 +13,6 @@ import {
     getRouteMain,
     getRouteProfile,
 } from '@/shared/const/router';
-import { toggleFeatures } from '@/shared/lib/features';
 
 export const useSidebarItems = () => {
     const userData = useSelector(getUserAuthData);
@@ -28,11 +24,7 @@ export const useSidebarItems = () => {
         },
         {
             path: getRouteAbout(),
-            Icon: toggleFeatures({
-                name: 'isAppRedesigned',
-                on: () => AboutIcon,
-                off: () => ListIconDeprecated,
-            }),
+            Icon: AboutIcon,
             text: 'О сайте',
         },
     ];
@@ -40,21 +32,13 @@ export const useSidebarItems = () => {
         sidebarItemsList.push(
             {
                 path: getRouteProfile(userData.id),
-                Icon: toggleFeatures({
-                    name: 'isAppRedesigned',
-                    on: () => ProfileIcon,
-                    off: () => ProfileIconDeprecated,
-                }),
+                Icon: ProfileIcon,
                 text: 'Профиль',
                 authOnly: true,
             },
             {
                 path: getRouteArticles(),
-                Icon: toggleFeatures({
-                    name: 'isAppRedesigned',
-                    on: () => ArticleIcon,
-                    off: () => ArticleIconDeprecated,
-                }),
+                Icon: ArticleIcon,
                 text: 'Статьи',
                 authOnly: true,
             },

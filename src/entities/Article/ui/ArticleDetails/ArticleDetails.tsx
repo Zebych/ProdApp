@@ -26,7 +26,6 @@ import {
     getArticleDetailsIsLoading,
 } from '../../model/selectors/articleDetails';
 import { renderArticleBlock } from './renderBlock';
-import { ToggleFeatures } from '@/shared/lib/features';
 import { AppImage } from '@/shared/ui/redesigned/AppImage';
 import { fetchArticleById } from '../../model/services/fetchArticleById';
 import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';
@@ -111,30 +110,13 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
         content = <ArticleDetailsSkeleton />;
     } else if (error) {
         content = (
-            <ToggleFeatures
-                feature="isAppRedesigned"
-                on={
-                    <DisplayText
-                        align={TextAlign.CENTER}
-                        title={t('Произошла ошибка')}
-                    />
-                }
-                off={
-                    <TextDeprecated
-                        align={TextAlign.CENTER}
-                        title={t('Произошла ошибка')}
-                    />
-                }
+            <DisplayText
+                align={TextAlign.CENTER}
+                title={t('Произошла ошибка')}
             />
         );
     } else {
-        content = (
-            <ToggleFeatures
-                feature="isAppRedesigned"
-                on={<Redesigned />}
-                off={<Deprecated />}
-            />
-        );
+        content = <Redesigned />;
     }
 
     return (

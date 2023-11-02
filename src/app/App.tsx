@@ -5,21 +5,21 @@ import { Navbar } from '@/widgets/Navbar';
 import { Sidebar } from '@/widgets/Sidebar';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { AppRouter } from './providers/router';
-import { getUserInited, initAuthData } from '@/entities/User';
+import { getUserAuthData, getUserInited, initAuthData } from '@/entities/User';
 import { useTheme } from '@/shared/lib/hooks/useTheme/useTheme';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { PageLoader } from '@/widgets/PageLoader';
-import { ToggleFeatures } from '@/shared/lib/features';
 import { MainLayout } from '@/shared/layouts/MainLayout';
 import { AppLoaderLayout } from '@/shared/layouts/AppLoaderLayout';
 import { useAppToolbar } from './lib/useAppToolbar';
 import { withTheme } from './providers/ThemeProviders/ui/withTheme';
+import { LoginModal } from '@/features/AuthByUsername';
 
 const App = memo(() => {
     const { theme } = useTheme();
     const dispatch = useAppDispatch();
     const inited = useSelector(getUserInited);
     const toolbar = useAppToolbar();
+    const userData = useSelector(getUserAuthData);
 
     useEffect(() => {
         if (!inited) {
@@ -29,51 +29,27 @@ const App = memo(() => {
 
     if (!inited) {
         return (
-            <ToggleFeatures
-                feature="isAppRedesigned"
-                on={
-                    <div
-                        id="app"
-                        className={classNames('app_redesigned', {}, [theme])}
-                    >
-                        <AppLoaderLayout />
-                    </div>
-                }
-                off={<PageLoader />}
-            />
+            <div id="app" className={classNames('app_redesigned', {}, [theme])}>
+                <AppLoaderLayout />
+            </div>
         );
     }
 
     return (
-        <ToggleFeatures
-            feature="isAppRedesigned"
-            off={
-                <div id="app" className={classNames('app', {}, [theme])}>
-                    <Suspense fallback="">
-                        <Navbar />
-                        <div className="content-page">
-                            <Sidebar />
-                            <AppRouter />
-                        </div>
-                    </Suspense>
-                </div>
-            }
-            on={
-                <div
-                    id="app"
-                    className={classNames('app_redesigned', {}, [theme])}
-                >
-                    <Suspense fallback="">
-                        <MainLayout
-                            header={<Navbar />}
-                            content={<AppRouter />}
-                            sidebar={<Sidebar />}
-                            toolbar={toolbar}
-                        />
-                    </Suspense>
-                </div>
-            }
-        />
+        <div id="app" className={classNames('app_redesigned', {}, [theme])}>
+            <Suspense fallback="">
+                {userData ? (
+                    <MainLayout
+                        header={<Navbar />}
+                        content={<AppRouter />}
+                        sidebar={<Sidebar />}
+                        toolbar={toolbar}
+                    />
+                ) : (
+                    <LoginModal isOpen onClose={() => {}} />
+                )}
+            </Suspense>
+        </div>
     );
 });
 

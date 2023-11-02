@@ -2,7 +2,6 @@ import { memo, Suspense, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { VStack } from '@/shared/ui/redesigned/Stack';
-import { TextComponent, TextSize } from '@/shared/ui/deprecated/Text';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { AddCommentForm } from '@/features/addCommentForm';
 import { CommentList } from '@/entities/Comment';
@@ -14,7 +13,6 @@ import { getArticleCommentIsLoading } from '../../model/selectors/comments';
 import { addCommentForArticle } from '../../model/services/addCommentForArticle/addCommentForArticle';
 import { Loader } from '@/shared/ui/deprecated/Loader';
 import { getArticleComments } from '../../model/slices/articleDetailsCommentsSlice';
-import { ToggleFeatures } from '@/shared/lib/features';
 import { DisplayText } from '@/shared/ui/redesigned/Text';
 
 interface ArticleDetailsCommentsProps {
@@ -44,22 +42,10 @@ export const ArticleDetailsComments = memo(
 
         return (
             <VStack gap="16" max className={classNames('', {}, [className])}>
-                <ToggleFeatures
-                    feature="isAppRedesigned"
-                    on={
-                        <DisplayText
-                            size="l"
-                            className={cls.commentTitle}
-                            text={t('Комментарий')}
-                        />
-                    }
-                    off={
-                        <TextComponent
-                            size={TextSize.L}
-                            className={cls.commentTitle}
-                            text={t('Комментарий')}
-                        />
-                    }
+                <DisplayText
+                    size="l"
+                    className={cls.commentTitle}
+                    text={t('Комментарий')}
                 />
 
                 <Suspense fallback={<Loader />}>
