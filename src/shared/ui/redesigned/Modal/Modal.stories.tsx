@@ -3,9 +3,10 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Modal } from './Modal';
 import { Theme } from '@/shared/const/theme';
+import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator';
 
 export default {
-    title: 'shared/Modal',
+    title: 'shared/ModalRedesigned',
     component: Modal,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -27,4 +28,4 @@ Dark.args = {
     children:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam.\n ',
 };
-Dark.decorators = [ThemeDecorator(Theme.DARK)];
+Dark.decorators = [NewDesignDecorator, ThemeDecorator(Theme.DARK)];
